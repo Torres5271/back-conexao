@@ -67,7 +67,7 @@ public class EnderecoController {
         return ResponseEntity.ok().build();
     }
 
-
+    @CrossOrigin(origins = "http://calencare.zapto.org")
     @PostMapping("/address/{cep}")
     public ResponseEntity<Endereco> getAddressByCep(@PathVariable String cep) {
         Endereco endereco = viaCepService.getEndereco(cep);
