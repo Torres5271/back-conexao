@@ -13,6 +13,7 @@ public class ViaCepService {
     @Autowired
     private EnderecoRepository enderecoRepository;
 
+
     private final RestTemplate restTemplate = new RestTemplate();
     private final String VIA_CEP_URL = "https://viacep.com.br/ws";
 
