@@ -31,8 +31,7 @@ public class CalencareApiApplication {
 				registry.addMapping("/**")
 						.allowedOrigins("http://calencare.zapto.org")
 						.allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE")
-						.allowedHeaders("*")
-						.allowCredentials(true);
+						.allowedHeaders("*");
 			}
 		};
 	}
