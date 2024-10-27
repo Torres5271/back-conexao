@@ -29,7 +29,7 @@ public class CalencareApiApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-						.allowedOrigins("http://calencare.zapto.org")
+						.allowedOrigins("http://54.243.135.89:80")
 						.allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE")
 						.allowedHeaders("*");
 			}
